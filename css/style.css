@@ -72,6 +72,26 @@ body {
   overflow-x: hidden;
 }
 
+.section-center {
+  padding: 4rem 0;
+  width: 80vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  font-size: 2rem;
+  font-family: "Grand Hotel", cursive;
+  letter-spacing: 0.5rem;
+  text-transform: capitalize;
+  color: #698f3f;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
 .header {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/main-bcg.jpg") center/cover no-repeat fixed;
@@ -130,10 +150,8 @@ body {
   background: linear-gradient(to left, #698f3f, #fca311, #698f3f);
 }
 
-.skills {
-  background: #e5e5e5;
-}
 .skills .skill {
+  background: #e5e5e5;
   padding: 2.5rem 0;
   text-align: center;
   transition: all 0.3s ease-in-out;
@@ -166,8 +184,39 @@ body {
   transform: translateY(-5px);
 }
 
+.about-img, .about-info {
+  padding: 2rem;
+}
+.about-text {
+  margin: 1rem 0;
+  max-width: 26rem;
+}
+.about-picture-container {
+  background: #698f3f;
+  border: 0.5rem solid #698f3f;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.about-picture-container .about-picture {
+  filter: brightness(60%);
+  width: 100%;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.about-picture-container:hover .about-picture {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
 @media screen and (min-width: 579px) {
   .skill {
+    float: left;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about-img,
+.about-info {
     float: left;
     width: 50%;
   }

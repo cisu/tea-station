@@ -18,6 +18,25 @@ body {
 
 // helper/utility classes
 // globals
+.section-center {
+  padding: 4rem 0;
+  width: 80vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  font-size: 2rem;
+  font-family: $slantedText;
+  letter-spacing: $letterSpacing;
+  text-transform: capitalize;
+  color: $primaryColor;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
 // navbar
 
 // header
@@ -97,9 +116,9 @@ body {
 
 // skills
 .skills {
-  background: $mainGrey;
 
   .skill {
+    background: $mainGrey;
     padding: 2.5rem 0;
     text-align: center;
     transition: $mainTransition;
@@ -140,5 +159,40 @@ body {
 }
 // end skills
 
+// about
+.about {
+  &-img,
+  &-info {
+    padding: 2rem;
+  }
+
+  &-text {
+    margin: 1rem 0;
+    max-width: 26rem;
+  }
+
+  &-picture-container {
+    background: $primaryColor;
+    border: 0.5rem solid $primaryColor;
+    border-radius: 1rem;
+    // overflow
+    overflow: hidden;
+
+    .about-picture {
+      filter: brightness(60%);
+      width: 100%;
+      display: block;
+      transition: $mainTransition;
+    }
+
+    &:hover .about-picture {
+      opacity: 0.5;
+      transform: scale(1.2);
+    }
+  }
+}
+// end about
+
 @import 'min-width-579';
+@import 'min-width-992';
 @import 'min-width-1200';
