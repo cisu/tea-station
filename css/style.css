@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=Grand+Hotel&display=swap");
+a {
+  text-decoration: none;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #698f3f;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +24,56 @@
 body {
   font-family: "Catamaran", sans-serif;
   line-height: 1.5;
+}
+
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/main-bcg.jpg") center/cover no-repeat fixed;
+  position: relative;
+}
+
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.5rem;
+}
+.banner .banner-subtitle {
+  font-size: 2rem;
+  font-family: "Grand Hotel", cursive;
+  color: #698f3f;
+}
+.banner .banner-title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.main-bnt,
+.banner-btn {
+  display: inline-block;
+  background: #698f3f;
+  text-transform: uppercase;
+  padding: 0.8rem 1.2rem;
+  color: #3a3e3d;
+  font-weight: bold;
+  outline: 0.2rem solid #698f3f;
+  outline-offset: 4px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.main-bnt:hover,
+.banner-btn:hover {
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.banner-btn {
+  padding: 1.2rem 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
