@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=Grand+Hotel&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+  line-height: 1.5;
+}
+
+/*# sourceMappingURL=style.css.map */
