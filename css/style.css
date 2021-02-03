@@ -15,6 +15,13 @@ a {
   color: #698f3f;
 }
 
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 @keyframes show {
   0% {
     transform: scale(2);
@@ -121,6 +128,54 @@ body {
 .content-divider {
   height: 0.5rem;
   background: linear-gradient(to left, #698f3f, #fca311, #698f3f);
+}
+
+.skills {
+  background: #e5e5e5;
+}
+.skills .skill {
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.skills .skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+.skills .skill-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: #698f3f;
+  transition: all 0.3s ease-in-out;
+}
+.skills .skill-text {
+  max-width: 13rem;
+  margin: 0 auto;
+}
+.skills .skill:hover {
+  background: #698f3f;
+}
+.skills .skill:hover .skill-title {
+  color: #ffffff;
+}
+.skills .skill:hover .skill-icon {
+  transform: translateY(-5px);
+}
+
+@media screen and (min-width: 579px) {
+  .skill {
+    float: left;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skill {
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,3 +13,10 @@ a {
 .text-primary {
   color: $primaryColor;
 }
+
+.clearfix::after,
+.clearfix::before {
+  content: '';
+  clear: both;
+  display: table;
+}

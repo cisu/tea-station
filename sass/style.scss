@@ -94,3 +94,51 @@ body {
   );
 }
 // end content divider
+
+// skills
+.skills {
+  background: $mainGrey;
+
+  .skill {
+    padding: 2.5rem 0;
+    text-align: center;
+    transition: $mainTransition;
+
+    &-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+    }
+
+    &-title {
+      font-size: 0.9rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: $letterSpacing;
+      margin-bottom: 1.5rem;
+      color: $primaryColor;
+      transition: $mainTransition;
+    }
+
+    &-text {
+      max-width: 13rem;
+      margin: 0 auto;
+    }
+
+    &:hover {
+      background: $primaryColor;
+
+      .skill-title {
+        color: $mainWhite;
+      }
+
+      .skill-icon {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
+// end skills
+
+@import 'min-width-579';
+@import 'min-width-1200';
