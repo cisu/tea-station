@@ -2,6 +2,7 @@
 
 @import 'config';
 @import 'utilities';
+@import 'animation';
 
 * {
   margin: 0;
@@ -12,7 +13,7 @@
 body {
   font-family: 'Catamaran', sans-serif;
   line-height: 1.5;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 // helper/utility classes
@@ -82,46 +83,14 @@ body {
 
 // end header
 
-// animations
-@keyframes show {
-  0% {
-    transform: scale(2);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+// content divider
+.content-divider {
+  height: 0.5rem;
+  background: linear-gradient(
+    to left,
+    $primaryColor,
+    $secondaryColor,
+    $primaryColor
+  );
 }
-
-@keyframes slideFromRight {
-  0% {
-    transform: translateX(1000px);
-  }
-  50% {
-    transform: translateX(-200px);
-  }
-  75% {
-    transform: translateX(50px);
-  }
-  100% {
-    transform: transformX(0px);
-  }
-}
-
-@keyframes slideFromLeft {
-  0% {
-    transform: translateX(-1000px);
-  }
-  50% {
-    transform: translateX(200px);
-  }
-  75% {
-    transform: translateX(-50px);
-  }
-  100% {
-    transform: transformX(0px);
-  }
-}
-
-// end of animations
+// end content divider
