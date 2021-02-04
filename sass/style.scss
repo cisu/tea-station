@@ -37,7 +37,61 @@ body {
   font-size: 2rem;
   text-transform: uppercase;
 }
+
+// nav button
+.nav-btn {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: $primaryColor;
+  margin: 1rem 1.3rem;
+  font-size: 2rem;
+  animation: bounce 3s ease-in-out;
+  cursor: pointer;
+}
+// end nav button
+
 // navbar
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: $mainGrey;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  transition: $mainTransition;
+  // transform
+  transform: translateX(-100%);
+
+  .nav-close {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .nav-items {
+    list-style-type: none;
+    padding: 1rem;
+  }
+
+  .nav-link {
+    display: block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $primaryColor;
+    transition: $mainTransition;
+
+    &:hover {
+      color: $mainDark;
+      padding-left: 0.5rem;
+    }
+  }
+}
+
+// end navbar
 
 // header
 .header {
