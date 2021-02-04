@@ -303,6 +303,54 @@ body {
   font-family: "Grand Hotel", cursive;
 }
 
+.services {
+  background: #e5e5e5;
+}
+.services .service-img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.services-title {
+  padding-top: 4rem;
+}
+.services .service-card {
+  border: 0.3rem solid #698f3f;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+.services .service-info {
+  background: #698f3f;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 0.5rem;
+  color: #ffffff;
+  text-transform: capitalize;
+  padding: 2.5rem 0 1rem 0;
+}
+.services .service-btn {
+  display: inline-block;
+  background: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 0.8rem 2rem;
+  color: #698f3f;
+  font-weight: bold;
+  border: 0.2rem solid #ffffff;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.services .service-btn:hover {
+  background: transparent;
+  color: #ffffff;
+}
+
 .contact {
   padding-top: 2rem;
 }

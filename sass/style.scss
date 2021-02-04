@@ -291,6 +291,63 @@ body {
 }
 // end products
 
+// services
+.services {
+  background: $mainGrey;
+
+  .service-img {
+    width: 100%;
+    display: block;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  &-title {
+    padding-top: 4rem;
+  }
+  .service-card {
+    border: 0.3rem solid $primaryColor;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    // box shadow styling
+  }
+
+  .service-info {
+    background: $primaryColor;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: $letterSpacing;
+    color: $mainWhite;
+    text-transform: capitalize;
+    padding: 2.5rem 0 1rem 0;
+  }
+
+  .service-btn {
+    display: inline-block;
+    background: $mainWhite;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    padding: 0.8rem 2rem;
+    color: $primaryColor;
+    font-weight: bold;
+    border: 0.2rem solid $mainWhite;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    transition: $mainTransition;
+
+    &:hover {
+      background: transparent;
+      color: $mainWhite;
+    }
+  }
+}
+
+// end services
+
 // contact
 .contact {
   padding-top: 2rem;
