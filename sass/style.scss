@@ -275,6 +275,34 @@ body {
 }
 // end contact
 
+// footer
+.footer {
+  background: $mainDark;
+  text-align: center;
+  margin-top: 5rem;
+
+  &-text {
+    text-transform: uppercase;
+    color: $mainWhite;
+    letter-spacing: $letterSpacing;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .social-icon {
+    color: $mainWhite;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    transition: $mainTransition;
+
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}
+
+// end footer
+
 @import 'min-width-579';
 @import 'min-width-768';
 @import 'min-width-992';

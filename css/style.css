@@ -275,6 +275,28 @@ body {
   letter-spacing: 0.5rem;
 }
 
+.footer {
+  background: #3a3e3d;
+  text-align: center;
+  margin-top: 5rem;
+}
+.footer-text {
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+.footer .social-icon {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.footer .social-icon:hover {
+  color: #698f3f;
+}
+
 @media screen and (min-width: 579px) {
   .skill {
     float: left;
