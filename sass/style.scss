@@ -233,6 +233,17 @@ body {
 }
 // end products
 
+// contact
+.contact {
+  .form-control::placeholder {
+    font-family: 'Catamaran', sans-serif;
+    color: $primaryColor;
+    text-transform: uppercase;
+    letter-spacing: $letterSpacing;
+  }
+}
+// end contact
+
 @import 'min-width-579';
 @import 'min-width-768';
 @import 'min-width-992';

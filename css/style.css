@@ -240,6 +240,13 @@ body {
   font-family: "Grand Hotel", cursive;
 }
 
+.contact .form-control::placeholder {
+  font-family: "Catamaran", sans-serif;
+  color: #698f3f;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
 @media screen and (min-width: 579px) {
   .skill {
     float: left;
