@@ -6,3 +6,12 @@
     // padding: 2rem;
   }
 }
+
+
+@media (min-width: 992px) {
+  .products {
+    .product {
+      width: 33.3%;
+    }
+  }
+}

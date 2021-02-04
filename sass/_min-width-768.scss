@@ -1,0 +1,12 @@
+@media (min-width: 768px) {
+  .products {
+    .product {
+      float: left;
+      width: 50%;
+      padding: 2rem 1rem;
+    }
+    .products-info {
+      padding: 2rem 1rem;
+    }
+  }
+}

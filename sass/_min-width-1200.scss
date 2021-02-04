@@ -3,3 +3,21 @@
     width: 25%;
   }
 }
+
+@media (min-width: 1200px) {
+  .products {
+    &-info {
+      float: left;
+      width: 30%;
+    }
+
+    &-inventory {
+      float: left;
+      width: 70%;
+    }
+
+    .product {
+      padding: 1.5rem 1rem 0 1rem;
+    }
+  }
+}

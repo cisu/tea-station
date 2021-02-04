@@ -208,10 +208,52 @@ body {
   transform: scale(1.2);
 }
 
+.products {
+  background: #3a3e3d;
+}
+.products-info, .products-inventory {
+  padding: 2rem 0;
+}
+.products .product-text {
+  color: white;
+  margin: 1rem 0;
+  max-width: 26rem;
+}
+.products .product {
+  padding: 2rem 0;
+}
+.products .product-img {
+  max-width: 100%;
+  display: block;
+  border-radius: 0.4rem;
+  margin-bottom: 2rem;
+}
+.products .product-title {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+}
+.products .product-price {
+  color: #698f3f;
+  letter-spacing: 0.5rem;
+  font-family: "Grand Hotel", cursive;
+}
+
 @media screen and (min-width: 579px) {
   .skill {
     float: left;
     width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .products .product {
+    float: left;
+    width: 50%;
+    padding: 2rem 1rem;
+  }
+  .products .products-info {
+    padding: 2rem 1rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -221,9 +263,27 @@ body {
     width: 50%;
   }
 }
+@media (min-width: 992px) {
+  .products .product {
+    width: 33.3%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .skill {
     width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .products-info {
+    float: left;
+    width: 30%;
+  }
+  .products-inventory {
+    float: left;
+    width: 70%;
+  }
+  .products .product {
+    padding: 1.5rem 1rem 0 1rem;
   }
 }
 
