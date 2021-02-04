@@ -7,11 +7,24 @@
   }
 }
 
-
 @media (min-width: 992px) {
   .products {
     .product {
       width: 33.3%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .contact {
+    &-info,
+    &-form {
+      float: left;
+      width: 50%;
+      padding: 0 1rem;
+    }
+    &-info {
+      padding-top: 5rem;
     }
   }
 }

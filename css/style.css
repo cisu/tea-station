@@ -240,6 +240,34 @@ body {
   font-family: "Grand Hotel", cursive;
 }
 
+.contact {
+  padding-top: 2rem;
+}
+.contact-item {
+  margin-bottom: 3rem;
+}
+.contact-title {
+  color: #698f3f;
+  font-family: "Grand Hotel", cursive;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.contact-text {
+  text-transform: uppercase;
+}
+.contact .form-control {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #698f3f;
+  outline: none;
+  margin: 2rem 0;
+  padding: 1.3rem 0;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
 .contact .form-control::placeholder {
   font-family: "Catamaran", sans-serif;
   color: #698f3f;
@@ -273,6 +301,16 @@ body {
 @media (min-width: 992px) {
   .products .product {
     width: 33.3%;
+  }
+}
+@media (min-width: 992px) {
+  .contact-info, .contact-form {
+    float: left;
+    width: 50%;
+    padding: 0 1rem;
+  }
+  .contact-info {
+    padding-top: 5rem;
   }
 }
 @media screen and (min-width: 1200px) {
