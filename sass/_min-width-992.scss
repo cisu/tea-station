@@ -5,17 +5,13 @@
     width: 50%;
     // padding: 2rem;
   }
-}
 
-@media (min-width: 992px) {
   .products {
     .product {
       width: 33.3%;
     }
   }
-}
 
-@media (min-width: 992px) {
   .contact {
     &-info,
     &-form {
@@ -27,4 +23,17 @@
       padding-top: 5rem;
     }
   }
+
+
+  .services {
+    .service-card {
+      float: left;
+      width: 30%;
+      margin-right: 3.3333%;
+    }
+  }
 }
+
+
+
+

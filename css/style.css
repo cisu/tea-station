@@ -423,11 +423,16 @@ body {
   .products .products-info {
     padding: 2rem 1rem;
   }
-}
-@media screen and (min-width: 768px) {
+
   .navbar {
     width: 30vw;
     max-width: 20rem;
+  }
+
+  .services .service-card {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -436,13 +441,11 @@ body {
     float: left;
     width: 50%;
   }
-}
-@media (min-width: 992px) {
+
   .products .product {
     width: 33.3%;
   }
-}
-@media (min-width: 992px) {
+
   .contact-info, .contact-form {
     float: left;
     width: 50%;
@@ -450,6 +453,12 @@ body {
   }
   .contact-info {
     padding-top: 5rem;
+  }
+
+  .services .service-card {
+    float: left;
+    width: 30%;
+    margin-right: 3.3333%;
   }
 }
 @media screen and (min-width: 1200px) {
