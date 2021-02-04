@@ -311,6 +311,16 @@ body {
     border-radius: 1rem;
     margin: 2rem 0;
     // box shadow styling
+    -webkit-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+    transition: $mainTransition;
+
+    &:hover {
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
   }
 
   .service-info {
@@ -343,6 +353,27 @@ body {
       background: transparent;
       color: $mainWhite;
     }
+  }
+
+  .service-img-container {
+    position: relative;
+  }
+
+  .service-icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 2rem;
+    background: $secondaryColor;
+    padding: 0.25rem 0.6rem;
+    border-radius: 50%;
+    border: 0.2rem solid $primaryColor;
+    color: $mainDark;
+    /* box shadow */
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
 }
 

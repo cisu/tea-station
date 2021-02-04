@@ -320,6 +320,15 @@ body {
   padding: 0.2rem;
   border-radius: 1rem;
   margin: 2rem 0;
+  -webkit-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-in-out;
+}
+.services .service-card:hover {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .services .service-info {
   background: #698f3f;
@@ -349,6 +358,25 @@ body {
 .services .service-btn:hover {
   background: transparent;
   color: #ffffff;
+}
+.services .service-img-container {
+  position: relative;
+}
+.services .service-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 2rem;
+  background: #fca311;
+  padding: 0.25rem 0.6rem;
+  border-radius: 50%;
+  border: 0.2rem solid #698f3f;
+  color: #3a3e3d;
+  /* box shadow */
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .contact {
